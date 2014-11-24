@@ -3,56 +3,156 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title Hello World
+    title Keep yourself up to date. Alexander Suevalov.
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Open+Sans:300,400,700', rel='stylesheet' type='text/css')
     link(rel='stylesheet', type='text/css', href='build/build.css')
   
   body
-
+    <!--[if lt IE 9]><p class="chromeframe">You are using an outdated browser.<a href="http://browsehappy.com/">Upgrade your browser today</a>or<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>to better experience this site.</p><![endif]-->
     article
 
-      section
-        h1 Hello World
+      section(data-bespoke-backdrop="intro")
+        .content
+          .byline
+          h2 Keep yourself up to date
+          .byline
+          .me
+          .me-contacts
+            a(href="http://suevalov.com" target="__blank") http://suevalov.com
+            a(href="mailto:asuevalov@dataart.com") asuevalov@dataart.com
 
-      section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+      section.slide2(data-bespoke-backdrop="slide2")
+        .content
+          h2 The web is an extremly rapidly evolving universe
+          img(src="/images/drinking-js.png")
 
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+      section.slide3(data-bespoke-backdrop="slide3")
+        .content
+          img(src="/images/slow-down.gif" width="1000px")
 
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+      section.slide4(data-bespoke-backdrop="slide4")
+        .content
+          .byline
+          h2 We need a recipe
+          .byline
 
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+      section.green.slide5(data-bespoke-backdrop="green")
+        .content
+          h2 Follow these simple steps
+          ul
+            li Follow cool people
+            li Find the best sources
+            li Attend conferences
+            li Get your own sources
+            li Filter everything
+            li Backup your knowledge
 
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+      section.slide6(data-bespoke-backdrop="twitter")
+        .content
+          .byline
+          h2 Follow cool people
+          .byline
+          
+          
+      section.slide7.green(data-bespoke-backdrop="green")
+        .content
+          ul
+            li.people
+              .photo.osmani
+              .info
+                a(href="http://addyosmani.com/" target="__blank") Addy Osmani
+                a(href="https://twitter.com/addyosmani" target="__blank") @addyosmani
+            li.people
+              .photo.rauschma
+              .info
+                a(href="http://rauschma.de/" target="__blank") Axel Rauschmayer
+                a(href="https://twitter.com/rauschma" target="_blank") @rauschma
+            li.people
+              .photo.alman
+              .info
+                a(href="http://benalman.com/" target="__blank") Ben Alman
+                a(href="https://twitter.com/cowboy" target="_blank") @cowboy
+            li.people
+              .photo.croll
+              .info
+                a(href="http://anguscroll.com/" target="__blank") Angus Croll
+                a(href="https://twitter.com/angustweets" target="_blank") @angustweets
+            li.people
+              .photo.coyer
+              .info
+                a(href="http://css-tricks.com/" target="__blank") Chris Coyier
+                a(href="https://twitter.com/chriscoyier" target="_blank") @chriscoyier
+            li.people
+              .photo.frost
+              .info
+                a(href="http://bradfrostweb.com/" target="__blank") Brad Frost
+                a(href="https://twitter.com/brad_frost" target="_blank") @brad_frost
+            li.people
+              .photo.heilmann
+              .info
+                a(href="http://christianheilmann.com/" target="__blank") Christian Heilmann
+                a(href="https://twitter.com/codepo8" target="_blank") @codepo8
+            li.people
+              .photo.walsh
+              .info
+                a(href="http://davidwalsh.name/" target="__blank") David Walsh
+                a(href="https://twitter.com/davidwalshblog" target="_blank") @davidwalshblog
+            li.people
+              .photo.resig
+              .info
+                a(href="http://ejohn.org/" target="__blank") John Resig
+                a(href="https://twitter.com/jeresig" target="_blank") @jeresig
+                
+      section.slide8.green(data-bespoke-backdrop="green")
+        .content
+          ul
+            li.people
+              .photo.irish
+              .info
+                a(href="http://paulirish.com/" target="__blank") Paul Irish
+                a(href="https://twitter.com/paul_irish" target="__blank") @paul_irish
+            li.people
+              .photo.sorhus
+              .info
+                a(href="http://sindresorhus.com/" target="__blank") Sindre Sorhus
+                a(href="https://twitter.com/sindresorhus" target="__blank") @sindresorhus
+            li.people
+              .photo.ashkenas
+              .info
+                a(href="http://ashkenas.com/" target="__blank") Jeremy Ashkenas
+                a(href="https://twitter.com/jashkenas" target="__blank") @jashkenas
+            li.people
+              .photo.harisov
+              .info
+                a(href="http://vitaly.ya.ru/" target="__blank") Vitaly Harisov
+                a(href="https://twitter.com/harisov" target="__blank") @harisov
+            li.people
+              .photo.operatino
+              .info
+                a(href="http://rhr.me/" target="__blank") Robert Haritonov
+                a(href="https://twitter.com/operatino" target="__blank") @operatino
+            li.people
+              .photo.veged
+              .info
+                a(href="http://veged.ru/" target="__blank") Sergey Berezhnoy
+                a(href="https://twitter.com/veged" target="__blank") @veged
+            li.center
+              h2 Who is the author of "whatever I use"? 
+              h2 Google it. 
+              h2 Follow them.
+              
+      section.slide9
+        .content
+          img(src="/images/gotit.gif" width="1000px")
+        
+          
+      section.slide10(data-bespoke-backdrop="dig")
+        .content
+          .byline
+          h2 Find the best sources
+          .byline
+      
+            
 
     script(src='build/build.js')
+
