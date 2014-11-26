@@ -45,7 +45,7 @@ gulp.task('css', ['clean:css'], function() {
       'paths': ['./node_modules', './bower_components']
     }))
     .pipe(autoprefixer('last 2 versions', { map: false }))
-    .pipe(isDist ? csso() : through())
+    .pipe(through())
     .pipe(rename('build.css'))
     .pipe(gulp.dest('dist/build'))
     .pipe(connect.reload());
